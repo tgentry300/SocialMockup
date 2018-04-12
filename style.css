@@ -1,0 +1,81 @@
+body {
+    background-color: gray;
+}
+
+.header {
+    background-color: pink;
+    width: 850px;
+    height: 250px;
+    margin: 0 20% 0 20%;
+    position: absolute;
+}
+
+.pagename {
+    width: 300px;
+    font-size: 12px;
+    position: absolute;
+    top: 154px;
+    left: 176px;
+}
+
+.clickbar {
+    background-color: ghostwhite;
+    height: 40px;
+    width: 850px;
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 258px;
+}
+
+.click {
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    left: 200px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 3px;
+    vertical-align: top;
+}
+
+.photo {
+    background-color: blue;
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 135px;
+    left: 19px;
+    z-index: 1;
+}
+
+details {
+    display: inline-block;
+}
+
+ol>li {
+    display: block;
+}
+
+ol {
+    padding: 0;
+}
+
+.action {
+    position: absolute;
+    top: 220px;
+    left: 610px;
+}
+
+td {
+    background-color: white;
+}
+
+}
