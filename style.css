@@ -1,38 +1,41 @@
 body {
     background-color: gray;
+    width: 850px;
+    margin: 0 auto;
+    display: block-inline;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .header {
     background-color: pink;
-    width: 850px;
-    height: 250px;
-    margin: 0 20% 0 20%;
-    position: absolute;
+    padding-top: 100px;
 }
 
 .pagename {
+    float: left;
+    margin-top: 50px;
     width: 300px;
     font-size: 12px;
-    position: absolute;
-    top: 154px;
-    left: 176px;
 }
 
 .clickbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: ghostwhite;
     height: 40px;
     width: 850px;
-    position: absolute;
-    margin-left: 20%;
-    margin-right: 20%;
-    top: 258px;
 }
 
 .click {
     text-align: center;
     width: 400px;
-    position: absolute;
-    left: 200px;
 }
 
 ul {
@@ -47,12 +50,14 @@ li {
 }
 
 .photo {
+    float: left;
+    position: relative;
+    bottom: -20px;
     background-color: blue;
     height: 140px;
     width: 140px;
-    position: absolute;
-    top: 135px;
-    left: 19px;
+    margin-right: 20px;
+    margin-left: 20px;
     z-index: 1;
 }
 
@@ -69,13 +74,29 @@ ol {
 }
 
 .action {
-    position: absolute;
-    top: 220px;
-    left: 610px;
+    float: left;
+    margin: 100px 0 0 80px;
 }
 
 td {
     background-color: white;
 }
 
+.column {
+    box-sizing: border-box;
+    background-color: pink;
+    padding: 0 1em;
+}
+
+.left-column {
+    width: 328px;
+    float: left;
+}
+.right-column {
+    width: 512px;
+    float: right;
+}
+
+#columns {
+    margin-top: 1em;
 }
